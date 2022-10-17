@@ -1,8 +1,29 @@
 .casino-td {
-  text-align: center;
+  text-align: center !important;
+  vertical-align: middle !important;
 }
 
 .casino-th {
-  text-align: center;
+  text-align: center !important;
   background-color: orange;
+}
+
+.btn-casino {
+  background-color: green !important;
+  border-color: green !important;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  background-image: none;
+  box-shadow: none;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.review-link {
+  color: blue;
 }

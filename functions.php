@@ -109,7 +109,7 @@ function sortyByPosition($a, $b) { // custom function to use together with usort
 function print_table ($fitered_json){
 ?>
 <div>
-    <table class="table table-striped">
+    <table class="table table-striped" style="background-color:white;">
     <thead>
         <tr>
         <th class="casino-th" scope="col">Casino</th>

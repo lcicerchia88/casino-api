@@ -13,17 +13,18 @@
 
 // Bootstrap and JS already added in functions.php of the plugin via wp_enqueue_style
 
-require_once ('/home/customer/www/ezequielc13.sg-host.com/public_html/wp-content/plugins/casino_api/functions.php');
+
+require_once (dirname(__FILE__).'/functions.php');
 
 add_action('admin_menu', 'admin_casino_plugin_menu');
 
-add_shortcode ('show_reviews_casino', 'show_reviews_casino_function'); // I create a shortcode in this first instance just 
-//to be able to show the results in any page, for testing purposes
+add_shortcode ('show_reviews_casino', 'show_reviews_casino_function'); // I create a shortcode as a way of showing the reviews in any page of the site. 
 
 function show_reviews_casino_function (){
     
     $jsonObj = get_api_response();
     $filtered_json = filter_json ($jsonObj);
     print_table ($filtered_json);
+    
 }
 
